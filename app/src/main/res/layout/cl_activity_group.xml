@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!--    https://app.zeplin.io/project/5d1c2e7d016b288ce3036231/screen/5d83238435a4ce784473c3d0-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGrey">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/spacing_4"
+        app:layout_constraintBottom_toTopOf="@+id/viewPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolBar"
+            android:elevation="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/btn_cancel"
+                    style="@style/ToolBarText"
+                    android:layout_marginStart="@dimen/spacing_17"
+                    android:text="@string/cancel"
+                    android:textColor="@color/darkishPink"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title_group"
+                    style="@style/ToolBarText"
+                    android:textColor="@color/lightBlack"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/first_name_last_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_48"
+            android:layout_marginStart="@dimen/spacing_9"
+            android:layout_marginTop="@dimen/spacing_2.5"
+            android:layout_marginEnd="@dimen/spacing_9"
+            android:layout_marginBottom="@dimen/spacing_9"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            app:tabBackground="@drawable/bg_tabs"
+            app:tabGravity="fill"
+            app:tabIndicator="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/darkishPink"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/tabText"
+            app:tabTextColor="@color/darkishPink" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

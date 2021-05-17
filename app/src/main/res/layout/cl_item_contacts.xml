@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_profile_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/spacing_16"
+    android:layout_marginTop="@dimen/spacing_3"
+    android:layout_marginEnd="@dimen/spacing_9"
+    android:layout_marginBottom="@dimen/spacing_3"
+    android:background="@drawable/bg_profile_card"
+    app:cardCornerRadius="@dimen/spacing_4"
+    app:cardElevation="@dimen/spacing_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_card_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="@dimen/spacing_40"
+            android:layout_height="@dimen/spacing_40"
+            android:layout_marginStart="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15"
+            android:layout_marginBottom="@dimen/spacing_15"
+            android:background="@drawable/bg_avatar_list"
+            android:elevation="@dimen/spacing_4"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImageViewStyle"
+            app:srcCompat="@drawable/ic_user" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_profile_initial"
+            android:layout_width="@dimen/spacing_40"
+            android:layout_height="@dimen/spacing_40"
+            android:layout_marginStart="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15"
+            android:layout_marginBottom="@dimen/spacing_15"
+            android:background="@drawable/bg_avatar_list"
+            android:elevation="@dimen/spacing_4"
+            android:gravity="center"
+            android:textColor="@color/mediumBlack"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_10"
+            android:textColor="@color/black85"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile_pic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/first_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_4"
+            android:textColor="@color/black85"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_first_name"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/last_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_15"
+            android:text="@string/follow"
+            android:textColor="@color/darkishPink"
+            android:textSize="@dimen/font_14"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/iv_decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_10"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_accept"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close" />
+
+        <ImageButton
+            android:id="@+id/iv_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_tick" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

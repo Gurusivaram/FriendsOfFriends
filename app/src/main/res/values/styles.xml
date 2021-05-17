@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolBar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:elevation">@dimen/spacing_4</item>
+        <item name="android:background">@color/paleGrey</item>
+    </style>
+
+    <style name="ToolBarText" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_17</item>
+        <item name="android:layout_marginTop">@dimen/spacing_12</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_12</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextInputHeading" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black45</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:paddingTop">@dimen/spacing_15</item>
+        <item name="android:paddingStart">@dimen/spacing_15</item>
+        <item name="android:paddingEnd">@dimen/spacing_15</item>
+        <item name="android:paddingBottom">@dimen/spacing_4</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:elevation">@dimen/spacing_4</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginTop">@dimen/spacing_6</item>
+        <item name="android:background">@drawable/bg_outer_hint</item>
+    </style>
+
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:elevation">@dimen/spacing_4</item>
+        <item name="android:background">@drawable/bg_edit_text_outer</item>
+    </style>
+
+    <style name="TextInput" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black85</item>
+        <item name="android:textSize">@dimen/font_17</item>
+        <item name="android:paddingTop">@dimen/spacing_8</item>
+        <item name="android:paddingStart">@dimen/spacing_15</item>
+        <item name="android:paddingEnd">@dimen/spacing_15</item>
+        <item name="android:paddingBottom">@dimen/spacing_10</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/spacing_15</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_15</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_16</item>
+        <item name="android:background">@drawable/bg_edit_text_inner</item>
+    </style>
+
+    <style name="DetailsTextHeading" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/black85</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:paddingTop">@dimen/spacing_15</item>
+        <item name="android:paddingStart">@dimen/spacing_20</item>
+        <item name="android:paddingEnd">@dimen/spacing_20</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">@dimen/spacing_4</item>
+        <item name="android:topLeftRadius">@dimen/spacing_4</item>
+        <item name="android:topRightRadius">@dimen/spacing_4</item>
+    </style>
+
+    <style name="DetailsText" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/font_18</item>
+        <item name="android:textColor">@color/darkishPink</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:paddingBottom">@dimen/spacing_15</item>
+        <item name="android:paddingStart">@dimen/spacing_20</item>
+        <item name="android:paddingEnd">@dimen/spacing_20</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">@dimen/spacing_4</item>
+        <item name="android:bottomLeftRadius">@dimen/spacing_4</item>
+        <item name="android:bottomRightRadius">@dimen/spacing_4</item>
+    </style>
+
+    <style name="DetailsTextAddress" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/black45</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:paddingStart">@dimen/spacing_20</item>
+        <item name="android:paddingEnd">@dimen/spacing_20</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">@dimen/spacing_4</item>
+    </style>
+
+    <style name="DialogFragmentTitle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_17</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/spacing_20</item>
+    </style>
+
+    <style name="DialogFragmentSubTitle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:layout_marginTop">@dimen/spacing_8</item>
+    </style>
+
+    <style name="DialogFragmentTextInput" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_input_email_otp</item>
+        <item name="android:textSize">@dimen/font_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:padding">@dimen/spacing_4</item>
+    </style>
+
+    <style name="DialogFragmentButton" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_13</item>
+        <item name="android:background">@drawable/bg_btn_otp</item>
+        <item name="android:paddingStart">@dimen/spacing_27</item>
+        <item name="android:paddingEnd">@dimen/spacing_27</item>
+        <item name="android:paddingTop">@dimen/spacing_12</item>
+        <item name="android:paddingBottom">@dimen/spacing_12</item>
+        <item name="android:textSize">@dimen/font_17</item>
+        <item name="android:textColor">@color/darkishPink</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ChooserButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_20</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_20</item>
+        <item name="android:background">@drawable/bg_btn_chooser</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="CircleImageViewStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

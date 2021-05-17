@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black45">#73000000</color>
+    <color name="black85">#d9000000</color>
+    <color name="black">#FF000000</color>
+    <color name="charcoal">#66494949</color>
+    <color name="darkTeal">#FF018786</color>
+    <color name="darkishPink">#eb3878</color>
+    <color name="darkPurple">#FF3700B3</color>
+    <color name="darkGrey">#a6000000</color>
+    <color name="grey">#ced4e1</color>
+    <color name="grey10">#6f6f6f</color>
+    <color name="lightPurple">#FFBB86FC</color>
+    <color name="lightBlack">#030303</color>
+    <color name="lightWhite">#DBDBDB</color>
+    <color name="logoPinkLight">#FFEB3878</color>
+    <color name="logoPinkDark">#FFD02160</color>
+    <color name="lightTeal">#FF03DAC5</color>
+    <color name="mediumPurple">#FF6200EE</color>
+    <color name="mediumBlack">#40000000</color>
+    <color name="paleGrey">#f5f7fc</color>
+    <color name="steel">#8e8e93</color>
+    <color name="steel0.12">#1e8e8e93</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?><!--    https://app.zeplin.io/project/5d1c2e7d016b288ce3036231/screen/5d832389ac05be78980a279a-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root_contact_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGrey">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tb_contact_detail"
+        style="@style/ToolBar"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_tab_bar_contact_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_back_contact_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_back_contacts"
+                style="@style/ToolBarText"
+                android:text="@string/contacts"
+                android:textColor="@color/darkishPink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toEndOf="@+id/iv_back_contact_details"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_edit"
+                style="@style/ToolBarText"
+                android:layout_marginEnd="@dimen/spacing_17"
+                android:text="@string/edit"
+                android:textColor="@color/darkishPink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:id="@+id/sv_contact_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_contact_detail">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_contact_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="@dimen/spacing_62"
+                android:layout_height="@dimen/spacing_62"
+                android:layout_marginTop="@dimen/spacing_30"
+                android:background="@drawable/bg_avatar_detail"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircleImageViewStyle"
+                app:srcCompat="@drawable/ic_user" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_profile_initial"
+                android:layout_width="@dimen/spacing_62"
+                android:layout_height="@dimen/spacing_62"
+                android:layout_marginTop="@dimen/spacing_30"
+                android:background="@drawable/bg_avatar_detail"
+                android:elevation="@dimen/spacing_4"
+                android:gravity="center"
+                android:textColor="@color/mediumBlack"
+                android:textSize="@dimen/font_25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_4.5"
+                android:textColor="@color/black85"
+                android:textSize="@dimen/font_18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profile_pic"
+                tools:text="@string/username" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey10"
+                android:textSize="@dimen/font_11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                tools:text="@string/company_eg" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_phone_heading"
+                style="@style/DetailsTextHeading"
+                android:layout_marginTop="@dimen/spacing_30"
+                android:text="@string/phone_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_company" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_phone"
+                style="@style/DetailsText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone_heading"
+                tools:text="@string/phone_eg" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_email_heading"
+                style="@style/DetailsTextHeading"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:text="@string/email_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_email"
+                style="@style/DetailsText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email_heading"
+                tools:text="@string/email_eg" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_heading"
+                style="@style/DetailsTextHeading"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:text="@string/address_small"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_street1"
+                style="@style/DetailsTextAddress"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_address_heading"
+                tools:text="@string/street" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_street2"
+                style="@style/DetailsTextAddress"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_street1"
+                tools:text="@string/street" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_city"
+                style="@style/DetailsTextAddress"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_street2"
+                tools:text="@string/city" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_state"
+                style="@style/DetailsTextAddress"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_city"
+                tools:text="@string/state" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address"
+                style="@style/DetailsTextAddress"
+                android:paddingBottom="@dimen/spacing_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_state"
+                tools:text="@string/postal_code" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_social"
+                style="@style/DetailsText"
+                android:layout_marginTop="@dimen/spacing_6"
+                android:layout_marginBottom="@dimen/spacing_70"
+                android:paddingTop="@dimen/spacing_15"
+                android:text="@string/view_social_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_20"
+                android:text="@string/logout"
+                android:textColor="@color/darkishPink"
+                android:textSize="@dimen/font_17"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

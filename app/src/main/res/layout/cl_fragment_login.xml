@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?><!--    https://app.zeplin.io/project/5d1c2e7d016b288ce3036231/screen/5d832381135a48547cd44eb7-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGrey"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/paleGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_70"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_splash" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_username"
+            style="@style/TextInputHeading"
+            android:layout_marginTop="@dimen/spacing_50"
+            android:background="@drawable/bg_outer_hint"
+            android:text="@string/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_username"
+            style="@style/TextInputLayout"
+            android:background="@drawable/bg_edit_text_outer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_username"
+                style="@style/TextInput"
+                android:background="@drawable/bg_edit_text_inner"
+                android:hint="@string/jhon"
+                android:inputType="textWebEmailAddress|textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_password"
+            style="@style/TextInputHeading"
+            android:background="@drawable/bg_outer_hint"
+            android:text="@string/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_username" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_new_password"
+            style="@style/TextInputLayout"
+            android:background="@drawable/bg_edit_text_outer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_password"
+                style="@style/TextInput"
+                android:background="@drawable/bg_edit_text_inner"
+                android:hint="@string/password_small"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_15"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:paddingStart="@dimen/spacing_20"
+            android:paddingTop="@dimen/spacing_15"
+            android:paddingEnd="@dimen/spacing_20"
+            android:paddingBottom="@dimen/spacing_15"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_17"
+            app:backgroundTint="@color/darkishPink"
+            app:cornerRadius="@dimen/spacing_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_new_password" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_58"
+            android:text="@string/forgot_password_question"
+            android:textColor="@color/darkishPink"
+            android:textSize="@dimen/font_17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_29"
+            android:text="@string/sign_up"
+            android:textColor="@color/darkishPink"
+            android:textSize="@dimen/font_17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_51"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:text="@string/app_version"
+            android:textColor="@color/steel"
+            android:textSize="@dimen/font_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_signup" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
